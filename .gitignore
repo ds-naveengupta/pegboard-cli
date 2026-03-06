@@ -1,0 +1,8 @@
+# Byte-compiled / optimized / DLL files
+pegboard/__pycache__/
+pegboard/commands/__pycache__/
+pegboard/utils/__pycache__/
+tests/__pycache__/
+
+# Distribution / packaging
+*.egg-info/

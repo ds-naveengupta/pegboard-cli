@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pegboard-cli"
+dynamic = ["version"]
+dependencies = [
+    "typer[all]",
+    "rich",
+]
+
+[project.scripts]
+pegboard-cli = "pegboard.cli:app"
+
+[tool.setuptools.dynamic]
+version = {attr = "pegboard.__version__"}
+
+[tool.setuptools]
+packages = ["pegboard"]
