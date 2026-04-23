@@ -8,6 +8,7 @@ dynamic = ["version"]
 dependencies = [
     "typer[all]",
     "rich",
+    "platformdirs"
 ]
 
 [project.scripts]
